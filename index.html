@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Café Rodante</title>
+    <title>Beetle Caffee</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- Encabezado -->
     <header>
-        <h1>Beetle Coffee</h1>
-        <p>El mejor café donde tú estés</p>
+        <h1>Beetle Caffee</h1>
+        <p>Un café que te hará volar</p>
     </header>
 
     <!-- Sección de bienvenida -->
     <section id="about">
-        <img src="images/cafe-truck.jpg" alt="Cafetería Rodante">
-        <h2>Sobre Nosotros</h2>
-        <p>Somos una cafetería móvil que lleva café de especialidad a eventos, oficinas y espacios públicos. ¡Síguenos para conocer nuestras rutas diarias!</p>
+        <img src="images/logo.jpg" alt="Cafetería Rodante">
+        <h2>Nosotros</h2>
+        <p>Beetle caffe es un proyecto de emprendimiento
+            dedicado a la venta y comercialización de bebidas
+            a base de café, así como productos de la cocina a
+            tu corazón.
+            Nuestra cafetería rodante busca llevarte el mejor
+            café hasta el alcance de tus manos.
+            Así como también nos preocupamos por el medio
+            ambiente y la reducción de residuos</p>
     </section>
 
     <!-- Menú de café -->
@@ -69,7 +76,7 @@
 <!-- Sección del mapa y disponibilidad -->
 <section id="map-section">
     <h2>Ubicación en Vivo</h2>
-    <p>Sigue nuestro coffee truck en tiempo real:</p>
+    <p>Sigue nuestro Beetle Caffe en tiempo real:</p>
     <div id="map"></div>
 
     <div class="buttons">
@@ -83,7 +90,7 @@
     <!-- Formulario de contacto -->
     <section id="contact">
         <h2>Contáctanos</h2>
-        <p>Reserva nuestro café truck para tu evento o solicita información:</p>
+        <p>Reserva nuestro Beetle Caffe para tu evento o solicita información:</p>
         <form id="contact-form">
             <input type="text" id="name" placeholder="Tu Nombre" required>
             <input type="email" id="email" placeholder="Tu Correo" required>
@@ -93,9 +100,7 @@
         <p id="success-message" class="hidden">¡Mensaje enviado con éxito!</p>
     </section>
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJE_ojqrkK0edEIPAqTwKe57GYgSPo6uU&callback=initMap"></script>
     <script src="script.js"></script>
-
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJE_ojqrkK0edEIPAqTwKe57GYgSPo6uU&callback=initMap"></script>
 </body>
 </html>
-
