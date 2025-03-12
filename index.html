@@ -1,1 +1,101 @@
-<h1>Prueba</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Rodante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Beetle Coffee</h1>
+        <p>El mejor café donde tú estés</p>
+    </header>
+
+    <!-- Sección de bienvenida -->
+    <section id="about">
+        <img src="images/cafe-truck.jpg" alt="Cafetería Rodante">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una cafetería móvil que lleva café de especialidad a eventos, oficinas y espacios públicos. ¡Síguenos para conocer nuestras rutas diarias!</p>
+    </section>
+
+    <!-- Menú de café -->
+    <!-- Sección del Menú -->
+<section id="menu">
+    <h2>Menú</h2>
+    <div class="menu-item" data-name="Espresso" data-price="2.50">
+        <h3>Espresso</h3>
+        <p>$2.50</p>
+        <button class="add-to-cart">Agregar</button>
+    </div>
+    <div class="menu-item" data-name="Capuchino" data-price="3.50">
+        <h3>Capuchino</h3>
+        <p>$3.50</p>
+        <button class="add-to-cart">Agregar</button>
+    </div>
+    <div class="menu-item" data-name="Latte" data-price="4.00">
+        <h3>Latte</h3>
+        <p>$4.00</p>
+        <button class="add-to-cart">Agregar</button>
+    </div>
+    <div class="menu-item" data-name="Cold Brew" data-price="4.50">
+        <h3>Cold Brew</h3>
+        <p>$4.50</p>
+        <button class="add-to-cart">Agregar</button>
+    </div>
+</section>
+
+<!-- Sección del Carrito -->
+<section id="cart">
+    <h2>Carrito de Compras</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="total-price">0.00</span></p>
+    <button id="checkout-btn">Realizar Pedido</button>
+</section>
+
+<!-- Sección del Pedido -->
+<section id="order-form" class="hidden">
+    <h2>Finalizar Pedido</h2>
+    <form id="order">
+        <input type="text" id="customer-name" placeholder="Tu Nombre" required>
+        <input type="tel" id="customer-phone" placeholder="Teléfono" required>
+        <button type="submit">Confirmar Pedido</button>
+    </form>
+    <p id="order-success" class="hidden">¡Pedido enviado con éxito!</p>
+</section>
+
+<!-- Sección del mapa y disponibilidad -->
+<section id="map-section">
+    <h2>Ubicación en Vivo</h2>
+    <p>Sigue nuestro coffee truck en tiempo real:</p>
+    <div id="map"></div>
+
+    <div class="buttons">
+        <button id="show-route">Mostrar Ruta</button>
+        <button id="toggle-status">Estado: Cerrado</button>
+    </div>
+
+    <p id="status-message">El coffee truck está <strong>Cerrado</strong></p>
+</section>
+
+    <!-- Formulario de contacto -->
+    <section id="contact">
+        <h2>Contáctanos</h2>
+        <p>Reserva nuestro café truck para tu evento o solicita información:</p>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Tu Nombre" required>
+            <input type="email" id="email" placeholder="Tu Correo" required>
+            <textarea id="message" placeholder="Escribe tu mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="success-message" class="hidden">¡Mensaje enviado con éxito!</p>
+    </section>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJE_ojqrkK0edEIPAqTwKe57GYgSPo6uU&callback=initMap"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
